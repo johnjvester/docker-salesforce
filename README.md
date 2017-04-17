@@ -4,7 +4,8 @@
 > (created by Adam Crump), without referencing the salesforce.jar file and 
 > adding support for CURL (for Slack integration).
 >
-> The image is designed to be as lean as possible, leveraging Apline and the following components:
+> The image is designed to be as lean as possible, leveraging Alpine and the 
+> following components:
 > - bash
 > - openjdk8
 > - apache-ant
@@ -12,7 +13,8 @@
 
 ### Getting Started
 
-The image is designed to work with pipeline build processes, but could be used independantly using the following docker command:
+The image is designed to work with pipeline build processes, but could be used independantly 
+using the following docker command:
 
 `docker pull johnjvester/docker-salesforce`
 
@@ -32,6 +34,7 @@ pipelines:
           - ant -buildfile build/build.xml deploy 
           - curl 'https://dzone.com'
 ```
+
 
 
 The codebase itself would include a /build folder, which would house the ant-salesforce.jar file, build.properties and build.xml files.  
